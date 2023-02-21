@@ -106,9 +106,7 @@ export function SvgAst({ ast, override }: AstProps) {
 export const err = console.error.bind(console);
 
 export function SvgXml(props: XmlProps) {
-  const { onError = err, override } = props;
-  let { xml} = props;
-  xml = xml ? xml?.replace('font-family', 'font-family-deprecated') : null;
+  const { onError = err, xml, override } = props;
   const ast = useMemo<JsxAST | null>(
     () => (xml !== null ? parse(xml) : null),
     [xml],

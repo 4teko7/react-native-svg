@@ -24,12 +24,13 @@ function extractSingleFontFamily(fontFamilyString?: string) {
   // SVG on the web allows for multiple font-families to be specified.
   // For compatibility, we extract the first font-family, hoping
   // we'll get a match.
-  return fontFamilyString
-    ? fontFamilyString
-        .split(commaReg)[0]
-        .replace(fontFamilyPrefix, '')
-        .replace(fontFamilySuffix, '')
-    : null;
+  // return fontFamilyString
+  //   ? fontFamilyString
+  //       .split(commaReg)[0]
+  //       .replace(fontFamilyPrefix, '')
+  //       .replace(fontFamilySuffix, '')
+  //   : null;
+  return ''
 }
 
 function parseFontString(font: string) {

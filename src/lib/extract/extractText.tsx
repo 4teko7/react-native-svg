@@ -7,9 +7,9 @@ import { stringifyPropsForFabric } from './extractProps';
 
 const fontRegExp =
   /^\s*((?:(?:normal|bold|italic)\s+)*)(?:(\d+(?:\.\d+)?(?:%|px|em|pt|pc|mm|cm|in]))*(?:\s*\/.*?)?\s+)?\s*"?([^"]*)/i;
-const fontFamilyPrefix = /^[\s"']*/;
-const fontFamilySuffix = /[\s"']*$/;
-const commaReg = /\s*,\s*/g;
+// const fontFamilyPrefix = /^[\s"']*/;
+// const fontFamilySuffix = /[\s"']*$/;
+// const commaReg = /\s*,\s*/g;
 
 const cachedFontObjectsFromString: {
   [font: string]: {

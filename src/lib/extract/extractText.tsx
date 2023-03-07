@@ -21,6 +21,8 @@ const cachedFontObjectsFromString: {
 } = {};
 
 function extractSingleFontFamily(fontFamilyString?: string) {
+  const font = fontFamilyString === '' ? fontFamilyString : ''
+  
   // SVG on the web allows for multiple font-families to be specified.
   // For compatibility, we extract the first font-family, hoping
   // we'll get a match.
@@ -30,7 +32,7 @@ function extractSingleFontFamily(fontFamilyString?: string) {
   //       .replace(fontFamilyPrefix, '')
   //       .replace(fontFamilySuffix, '')
   //   : null;
-  return ''
+  return font
 }
 
 function parseFontString(font: string) {
